@@ -1,0 +1,127 @@
+    body {
+        font-family: 'Nunito Sans', sans-serif;
+        background-image: url('https://c4.wallpaperflare.com/wallpaper/106/860/5/anime-original-wallpaper-preview.jpg');
+        background-position: left;
+        background-repeat: repeat-x;
+        background-size: cover;
+        animation: slide 50s linear infinite;
+        color: #fff;
+    }
+
+    @keyframes slide {
+        0% { background-position: left; }
+        100% { background-position: right; }
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .container-background {
+    padding: 1rem;
+    border-radius: 15px;
+  }
+    
+    .text-center {
+        text-align: center;
+    }
+
+    h1 {
+      font-weight: 300;
+      font-size: 2.5rem;
+      margin-top: 3rem;
+      color: #F1C40F; 
+    }
+
+    input[type="text"] {
+      border-radius: 25px;
+      padding: 10px 20px;
+      border: none;
+      box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+      transition: all 0.15s ease-out 0s;
+    }
+
+    input[type="text"]:focus {
+      outline: none;
+      box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.07);
+    }
+
+    .btn {
+      border-radius: 25px;
+      background: #F1C40F;
+      color: white;
+      transition: all 0.15s ease-out 0s;
+    }
+
+    .btn:hover {
+      background: #A67F0B;
+    }
+
+    h2,
+    p {
+      margin-top: 1.5rem;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+
+    img.weather-icon {
+      max-width: 100px;
+      animation: fadeIn 1s ease 0s forwards;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(-20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .weekly-forecast {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      
+    }
+
+    .weekly-forecast h3 {
+      font-weight: 300;
+      color: #17252a;
+      font-size: 1.8rem;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .day-weather {
+      background-color: rgba(31, 58, 147, 0.4);
+      display: flex;
+      font-weight: bold;
+      align-items:center;
+      justify-content: space-evenly;
+      padding: 1rem 1rem;
+      width: 70%;
+      animation: fadeInDays 1s ease 0s forwards;
+      opacity: 0;
+      border-radius: 20px;
+    }
+    
+    @keyframes fadeInDays {
+        0% { opacity: 0; transform: translateY(20px); }
+        100% { opacity: 1; transform: translateY(0); }
+    }
+    
+    .day-name,
+    .day-temp,
+    .day-description {
+      font-size: 1.2rem;
+      margin-right: 5px;
+    }
+
+    .day-icon {
+      max-width: 50px;
+      margin-bottom: 10px;
+    }
